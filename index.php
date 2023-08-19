@@ -126,7 +126,7 @@ if(isset($_SESSION["uid"])){
 					</div>
 				</div>
 				<div class="panel panel-info">
-					<div class="panel-heading">Products</div>
+					<div class="panel-heading">Productssssss</div>
 					<div class="panel-body">
 						<div id="get_product">
 							<!--Here we get product jquery Ajax Request-->
