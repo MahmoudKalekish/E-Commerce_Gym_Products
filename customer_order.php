@@ -26,8 +26,8 @@ if(!isset($_SESSION["uid"])){
 				<a href="#" class="navbar-brand">Ecommerce</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
+					<li><a href="index.php"><i class="fa-solid fa-house-user"></i> Home</a></li>
+					<li><a href="index.php"><i class="fa-solid fa-store"></i> Products</a></li>
 			</ul>
 		</div>
 	</div>
