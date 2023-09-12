@@ -21,7 +21,6 @@ $(document).ready(function(){
 	});
 
 	$(".login-btn").on("click", function(){
-
 		$.ajax({
 			url : '../admin/classes/Credentials.php',
 			method : "POST",
@@ -32,13 +31,18 @@ $(document).ready(function(){
 				if (resp.status == 202) {
 					$("#admin-register-form").trigger("reset");
 					//$(".message").html('<span class="text-success">'+resp.message+'</span>');
-					window.location.href = window.origin+"/ecommerce-app-h/admin/index.php";
-				}else if(resp.status == 303){
+					window.location.href = "http://localhost/E-Commerce_Gym_Products/admin/index.php";
+				} else if(resp.status == 303){
 					$(".message").html('<span class="text-danger">'+resp.message+'</span>');
+				} else {
+					console.error("Unexpected response:", resp);
 				}
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.error("AJAX Error:", textStatus, errorThrown);
 			}
 		});
-
 	});
+	
 
 });
